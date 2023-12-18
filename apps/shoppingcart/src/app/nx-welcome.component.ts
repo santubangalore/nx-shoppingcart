@@ -14,21 +14,7 @@ import { CommonModule } from '@angular/common';
      * * * * * * * * * * * * * * * * * * * * * * * * * * * *
      -->
     <style>
-      html {
-        -webkit-text-size-adjust: 100%;
-        font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-          'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-          'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-          'Noto Color Emoji';
-        line-height: 1.5;
-        tab-size: 4;
-        scroll-behavior: smooth;
-      }
-      body {
-        font-family: inherit;
-        line-height: inherit;
-        margin: 0;
-      }
+      
       h1,
       h2,
       p,
@@ -878,6 +864,7 @@ nx affected:e2e</pre>
               d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
             />
           </svg>
+          By Santu Ghosh, India
         </p>
       </div>
     </div>

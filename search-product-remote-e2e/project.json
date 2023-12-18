@@ -1,0 +1,33 @@
+{
+  "name": "search-product-remote-e2e",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "search-product-remote-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "search-product-remote-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "search-product-remote:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "search-product-remote:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "search-product-remote:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["search-product-remote-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["search-product-remote"]
+}

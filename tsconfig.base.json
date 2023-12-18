@@ -15,11 +15,25 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@netquest/auth": ["modules/auth/src/index.ts"],
+      "@netquest/modules/cart": ["modules/cart/src/index.ts"],
       "@netquest/modules/checkout": ["modules/checkout/src/index.ts"],
       "@netquest/modules/orders": ["modules/orders/src/index.ts"],
       "@netquest/modules/products": ["modules/products/src/index.ts"],
+      "auth-remote/Routes": [
+        "auth-remote/src/app/remote-entry/entry.routes.ts"
+      ],
+      "cart-remote/Routes": [
+        "cart-remote/src/app/remote-entry/entry.routes.ts"
+      ],
       "checkout-remote/Routes": [
         "checkout-remote/src/app/remote-entry/entry.routes.ts"
+      ],
+      "orders-remote/Routes": [
+        "orders-remote/src/app/remote-entry/entry.routes.ts"
+      ],
+      "search-product-remote/Routes": [
+        "search-product-remote/src/app/remote-entry/entry.routes.ts"
       ]
     }
   },

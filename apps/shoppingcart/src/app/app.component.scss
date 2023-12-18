@@ -16,17 +16,27 @@ ul >li {
     display:flex;
     flex-direction: row;
     align-items: flex-end;
-   
 }
 
 .nav-menu {
-    
     width: 100%;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     display:flex;
 }
 
-.search_container{
-    width:80%;
+
+.container_main{
+    background-color:  rgb(158, 234, 234);
+}
+
+.nav-item{
+    // color:whitesmoke;
+}
+
+.navbar-nav{    
+    height:40px;
+    background-color: #cbdfdc;
+    justify-content: space-between
+
 }

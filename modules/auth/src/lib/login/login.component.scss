@@ -1,0 +1,35 @@
+.login-app {
+    width: 30vw;
+    border: 2px solid black;
+    padding: 8px;
+    margin: 0 auto;
+  }
+  .login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 8px;
+  }
+  label {
+    display: block;
+  }
+
+  mat-form-field {
+    display:flex;
+    flex-direction: column;
+  }
+
+.input {
+    font-size: 16px;
+    font-family: inherit;
+    padding: 8px 4px;
+    background-color: #fff;
+    border: 2px solid var(--input-border);
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+
+.login_button{
+  background-color: goldenrod;
+}

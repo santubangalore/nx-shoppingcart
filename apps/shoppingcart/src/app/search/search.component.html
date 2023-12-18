@@ -1,4 +1,15 @@
 <div class="search_box">
-    <input type="text" id="search" name="search" size="200">
-    <button type="submit" ></button>
+    <form #searchForm="ngForm" (ngSubmit)="SearchProduct()"> 
+        <select name="category" [(ngModel)]="selectedCategory" class="input">
+            <option value={{index}} *ngFor ="let item of categories;let index=index" [ngValue]="item">
+                {{item}}
+            </option>
+        </select>
+        <input type="text" class="input" id="searchText" name="txtSearch" size="100" placeholder="Type your wish..." (ngModel)="searchStr"  required >
+        
+        <!-- <input type="submit" [disabled]="!searchForm.valid" value="Go" style="background-color: rgb(230, 175, 34);height:33px;border-radius: 2px;"/>-->
+        <button mat-icon-button style="background-color: goldenrod;" [disabled]="!searchForm.valid">
+            <mat-icon aria-label="Example icon-button with a heart icon">search</mat-icon>
+        </button>
+    </form>
 </div>
